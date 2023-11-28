@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+    <parent>
+		<groupId>ORGANIZATION_ID</groupId>
+		<artifactId>orgname-parent-pom</artifactId>
+		<version>1.0.0</version>
+	</parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+	<groupId>ORGANIZATION_ID</groupId>
+	<artifactId>service-sapi-v1</artifactId>
+	<version>1.0.0</version>
+	<packaging>mule-application</packaging>
+
+	<name>service-sapi-v1</name>
+	<description>This is the System API to store Due Diligence data into a database table.</description>
+
+    <dependencies>
+        <dependency>
+			<groupId>${orgId}</groupId>
+			<artifactId>service-sapi-asset</artifactId>
+			<version>1.0.4</version>
+			<classifier>raml</classifier>
+			<type>zip</type>
+		</dependency>
+    </dependencies>
+	
+</project>
